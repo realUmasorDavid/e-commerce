@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e40af",
+                        secondary: '#FEFEFF',
+                    },
+                    fontFamily: {
+                        Poppins: ["Poppins", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-Poppins">
+    <header>
+        <nav class="bg-primary border-gray-200">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="/frontend/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+
+                    <span class="self-center text-2xl text-white font-semibold whitespace-nowrap ">E-Commerce</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="text-white font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                        <li>
+                            <a href="index.html" class="block py-2 px-3 text-white md:p-0" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="detail.html"
+                                class="block py-2 px-3 text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Cart</a>
+                        </li>
+                        <li>
+                            <a href="order.html"
+                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Order</a>
+                        </li>
+                        <li>
+                            <a href="login.html"
+                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="p-4">
+        <h1 class="text-xl my-8">Order History</h1>
+
+
+        <div class="relative overflow-x-auto">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                <thead class="text-xs text-white uppercase bg-primary">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Order Id
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Order
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Price
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Status
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Date
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-gray-200 border-b ">
+                        <th scope="row" class="px-6 py-4">
+                            #1
+                        </th>
+                        <th class="px-6 py-4 font-medium text-black whitespace-nowrap">
+                            Jollof Rice, Beef
+                        </th>
+                        <td class="px-6 py-4">
+                            $40
+                        </td>
+                        <td class="px-6 py-4">
+                            Delivered
+                        </td>
+                        <td class="px-6 py-4">
+                            12 Jul 2020, 12:30 PM
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-200 border-b ">
+                        <th scope="row" class="px-6 py-4">
+                            #2
+                        </th>
+                        <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap">
+                            White Rice
+                        </th>
+                        <td class="px-6 py-4">
+                            $19
+                        </td>
+                        <td class="px-6 py-4">
+                            Delivered
+                        </td>
+                        <td class="px-6 py-4">
+                            12 Jul 2020, 12:30 PM
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-200 border-b ">
+                        <th scope="row" class="px-6 py-4">
+                            #3
+                        </th>
+                        <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap">
+                            Spaghetti
+                        </th>
+                        <td class="px-6 py-4">
+                            $9
+                        </td>
+                        <td class="px-6 py-4">
+                            Delivered
+                        </td>
+                        <td class="px-6 py-4">
+                            12 Jul 2020, 12:30 PM
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
