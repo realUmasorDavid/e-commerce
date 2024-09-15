@@ -52,20 +52,21 @@
                     <ul
                         class="text-white font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                         <li>
-                            <a href="" class="block py-2 px-3 text-white md:p-0" aria-current="page">Home</a>
+                            <a href="/" class="block py-2 px-3 text-white md:p-0" aria-current="page">Home</a>
                         </li>
                         <li>
                             <a href="/detail"
                                 class="block py-2 px-3 text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Cart</a>
                         </li>
                         <li>
-                            <a href="order.html"
+                            <a href="/order"
                                 class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Order</a>
                         </li>
                         <li>
-                            <a href="login.html"
+                            <a href="/login"
                                 class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Login</a>
                         </li>
+                        <p class="text-white">{{ user.username }}</p>
                     </ul>
                 </div>
             </div>
@@ -155,7 +156,7 @@
                 <img class="p-8 rounded-t-lg" src="{% static 'image.jpeg' %}" alt="product image" />
             </a>
             <div class="px-5 pb-5">
-                <a href="#">
+                <a href="/detail">
                     <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple IPhone 16 Pro</h5>
                 </a>
                 <div class="flex items-center mt-2.5 mb-5">
